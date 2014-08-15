@@ -1,0 +1,485 @@
+/************************
+		RESET
+*************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************************
+		UTILITY
+*************************/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Adds spacing between bronze and silver and makes them fill the container width*/
+.marginRight{
+	margin-right: 56px; 
+}
+/************************
+		LANDING PAGE
+*************************/
+
+
+/************************
+		TOP OF PAGE
+*************************/
+header {
+	display: relative;
+	height: 100px;
+	background-color: #eb593c;
+	color: white;
+	border-bottom: 3px solid white;
+}
+
+#logo{
+	float:left;	
+	display: block;
+	width: 450px;
+	height: 100px;
+	font-size: 5em;
+	padding-left: 30px;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase; 
+}
+
+#logo span{
+	color: #ABDCD6;
+}
+
+#socialLinks{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+#socialLinks a{
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 1.5em;
+}
+
+#socialLinks a:hover{
+	color: #e2f3f1;
+	cursor: pointer;
+}
+
+#mainNav{ 
+	display: inline-block;
+	float: right;
+	margin: 60px 20px 10px 0;
+}
+
+#mainNav li {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 1.25em;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+}
+
+#mainNav a{
+	text-decoration: none;
+	color: white;
+}
+
+#mainNav li:hover{
+	cursor: pointer;
+	font-weight: 400;
+}
+
+/************************
+		BANNER
+*************************/
+
+#banner {
+	/*border: 3px solid white;*//*Figure out why it moves when get rid of border*/
+	height: 400px;
+	background: #ABDCD6;
+	background:    -webkit-linear-gradient(#ABDCD6, #e2f3f1);
+	background:    -o-linear-gradient(#ABDCD6, #e2f3f1);
+	background:    linear-gradient(#ABDCD6, #e2f3f1);
+	border-bottom: 3px solid white;
+
+	}
+
+#bannerAlign{
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 70px;
+	text-align: center;
+}
+
+#bannerAlign p:first-child{
+	font-size: 2.5em;
+	color: #EB593C;
+	font-weight: bold;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+}
+
+#bannerAlign p:nth-child(2n){
+	padding: 20px 0;
+	font-size: 1.5em;
+	color: #333333;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+}
+
+#contact input{
+	border: 1px solid #ABDCD6;
+	margin: 0;
+	padding: .55em;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
+}
+
+/*Changes the outline deafult from blue to red*/
+#contact input:focus{
+	outline-color: #EB593C;
+}
+
+#contact input:hover{
+	border: 1px solid #3f978d ;
+}
+
+#contact button{
+	padding: .55em;
+	color: #fffcec;
+	background: #EB593C;
+	border-radius: 5px;
+	font-size: 1.25em;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+	box-shadow: 2px 2px 2px #333;
+}
+
+#contact button:hover{
+	cursor: pointer;
+	font-weight: 400;
+}
+
+#contact button:focus{
+	outline:none;
+}
+
+/************************
+		SERVICES
+*************************/
+
+#services{
+	border-bottom: 3px solid white;/*Sort out divide between sections and border issue*/
+	height: 700px;
+	background: #FFFCEC;
+}
+
+	/************************
+			CONCIERGE
+	************************
+/*Concierge half of the serivces*/
+#concierge{
+	border-right: 3px solid white;
+	float: left;
+	width: 50%;
+	height: 100%;
+	background: #EB593C;
+	background:    -webkit-linear-gradient(#EB593C, #f29683);
+	background:    -o-linear-gradient(#EB593C, #f29683);
+	background:    linear-gradient(#EB593C, #f29683);
+}
+
+.serviceHeader{
+	text-align: center;
+	font-size: 2.5em;
+	color: #333333;
+	font-weight: bold;
+	padding: 10px;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+}
+
+/*Class that centers the services infomation*/
+.serviceMain{
+	width: 90%;
+	margin: 30px auto;
+}
+
+/*Sets servie title for concierge on the left hand side*/
+.serviceTitleA{
+	color: white;
+	font-size: 1.5em;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+}
+
+/*Sets servie title for prop management on the right hand side*/
+.serviceTitle{
+	color: #EB593C;
+	font-size: 1.5em;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+}
+
+.serviceInfo{
+	color: #333333;
+	font-size: 1.25em;
+	margin-top: 5px;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+}
+
+/*Controls the size of the icon font*/
+.iconImg{
+	background: #ABDCD6;
+	background:    -webkit-linear-gradient(#ABDCD6, #e2f3f1);
+	background:    -o-linear-gradient(#ABDCD6, #e2f3f1);
+	background:    linear-gradient(#ABDCD6, #e2f3f1);
+	padding: 10px;
+	font-size: 7.5em;
+	text-align: center;
+}
+
+.iconImgB{
+	background: #EB593C;
+	background:    -webkit-linear-gradient(#EB593C, #e2f3f1);
+	background:    -o-linear-gradient(#EB593C, #e2f3f1);
+	background:    linear-gradient(#EB593C, #e2f3f1);
+	padding: 10px;
+	font-size: 7.5em;
+	text-align: center;
+}
+
+/*Class that sections off an area for each service*/
+.servicesArea{
+	height: 150px;
+	margin-bottom: 50px;
+}
+
+/*Class that sections off an area for the image of the service*/
+.imgArea{/*Add some sort of border*/
+	color: #333333;
+	width: 30%;
+	height:150px;
+	float: left;
+	border-radius: 20px;
+	border: 2px solid white;
+	box-shadow: 5px 5px 5px #333;
+}
+
+/*Class that provides an area to describe the service next to the corresponding image*/
+.servicesText{
+	margin: 50px;
+	padding: 20px 0 0 160px;
+}
+
+	/************************
+		PROPERTY MANAGEMENT 
+	*************************/
+/*Management half of the services*/
+#propManagement{
+	float: right;
+	width: 50%;
+	height: 100%;
+	background: #ABDCD6;
+	background:    -webkit-linear-gradient(#ABDCD6, #e2f3f1);
+	background:    -o-linear-gradient(#ABDCD6, #e2f3f1);
+	background:    linear-gradient(#ABDCD6, #e2f3f1);
+}
+
+
+
+/************************
+		COST 
+*************************/
+
+#cost{
+	border-bottom: 3px solid white;
+	height: 550px;
+	background: #EB593C;
+	background: #ABDCD6;
+	background:    -webkit-linear-gradient(#ABDCD6, #e2f3f1);
+	background:    -o-linear-gradient(#ABDCD6, #e2f3f1);
+	background:    linear-gradient(#ABDCD6, #e2f3f1);
+}
+
+#cost h3{
+	text-align: center;
+	font-size: 2.5em;
+	color: #333333;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	padding: 10px;
+}
+
+#costContainer{
+	width: 90%;
+	margin: 40px auto;
+	display: block;
+	height: 400px;
+
+}
+
+.costSection{
+	height: 100%;
+	width: 30%;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	border: 2px solid #EB593C;
+	box-shadow: 5px 5px 5px #888;
+	border-radius: 10px;
+}
+
+.costHead{
+	text-align: center;
+	font-size: 2em;
+	padding: 10px;
+	color: #333333;
+	font-weight: bold;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+}
+
+.cost{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 20px auto;
+	display: block;
+	background: #333333;
+	border: 2px solid #EB593C;
+}
+
+.cost span{
+	color: white;
+	text-align: center;
+	position: relative;
+	font-size: 2em;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+	left: 20px;
+	top: 35px;
+}
+
+.features {
+	display: block;
+	width: 250px;
+	margin: 20px auto;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
+}
+
+.features li{
+	margin-top: 10px;
+	font-size: 1em;
+	color: #333333;
+	padding-left: 40px;
+}
+
+.choice{
+	width: 100px;
+	height: 50px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left:36%;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #fffcec;
+	background: #EB593C;
+	border-radius: 5px;
+	font-size: 1.25em;
+	border: 2px outset buttonface;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+	box-shadow: 2px 2px 2px #333;
+}
+
+.choice:hover{
+	cursor: pointer;
+	font-weight: 400;
+}
+
+
+/************************
+		FOOTER
+*************************/
+
+footer{
+	border: 1px solid white;
+	background: #eb593c;
+}
+
+
+#social{
+	display: block;
+	width: 500px;
+	margin: 10px auto;
+	color: white;
+}
+
+#social li{
+	display: inline-block;
+	margin-right: 15px;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+}
+
+#social li:not(:first-child):hover{
+	color: #333333;
+	cursor: pointer;
+}
+
+#social li:first-child{
+	margin-right: 50px;
+}
